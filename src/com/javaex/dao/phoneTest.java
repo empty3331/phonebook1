@@ -14,8 +14,12 @@ public class phoneTest {
 		//System.out.println(personList.toString());
 		
 		
-		PersonVo personvo = new PersonVo("fgdfg","fgdg","dfg");
-		phoneDao.personInsert(personvo);
+		//PersonVo personvo = new PersonVo("fgdfg","fgdg","dfg");
+		//phoneDao.personInsert(personvo);
+		
+		PersonVo personVo = phoneDao.getPerson(1);
+		System.out.println(personVo.toString());
+		
 
 	}
 
